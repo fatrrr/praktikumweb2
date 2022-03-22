@@ -26,8 +26,8 @@
     $to = NULL;
     if(isset($_POST['konversi'])){
         $nilai = $_POST['nilai'];
-        $fr = isset($_POST['fr']);
-        $to = isset($_POST['to']);
+        $fr = (isset($_POST['fr']) ? $_POST['fr'] : NULL);
+        $to = (isset($_POST['to']) ? $_POST['to'] : NULL);
         switch($fr){
         case "c1" :
             switch($to){
