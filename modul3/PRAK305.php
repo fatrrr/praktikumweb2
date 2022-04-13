@@ -15,8 +15,8 @@
             }
             $long = strlen($kalimat);
             $i = 0;
-            echo "<h3>Input : </h3>".$kalimat;
-            echo "<h3>Output : </h3>";
+            echo "<b>Input : </b><br>".$kalimat;
+            echo "<b>Output : </b><br>";
             while($i < $long){
                 $k = $long;
                 while($k > 0){
