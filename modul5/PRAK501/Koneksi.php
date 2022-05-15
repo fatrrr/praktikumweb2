@@ -14,4 +14,3 @@ try {
     print "Koneksi error: ".$e->getMessage()."<br/>";
     die();
 }
-?>
