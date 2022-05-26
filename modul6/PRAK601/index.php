@@ -3,6 +3,9 @@
 <style type="text/css">
     <?php
         session_start();
+        if(isset($_POST['logout'])){
+            unset($_SESSION['id']);
+        }
         if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];
             if(isset($id)){
@@ -30,6 +33,16 @@
         <li>
             <a href='Peminjaman.php'><button>Lihat Data Peminjaman</button></a>
         </li>
+        <?php
+        if(isset($id)){
+            echo "
+            <li>
+                <form method='POST'>
+                <input type='submit' name='logout' value='Log Out'>
+                </form>
+            </li>";
+        }
+        ?>
     </ul>
 </body>
 </html>,
